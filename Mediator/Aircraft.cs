@@ -18,7 +18,6 @@ namespace Mediator
             Name = name;
         }
 
-        // Призначаємо посередника
         public void SetMediator(CommandCentre mediator)
         {
             _mediator = mediator;

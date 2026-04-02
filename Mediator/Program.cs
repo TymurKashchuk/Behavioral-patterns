@@ -20,13 +20,12 @@
 
             var commandCentre = new CommandCentre(runways, aircrafts);
 
-            // Демонстрація
             aircrafts[0].RequestLanding();
             aircrafts[1].RequestLanding();
-            aircrafts[2].RequestLanding(); // Очікуємо, що зайняті всі смуги
+            aircrafts[2].RequestLanding(); //зайняті всі смуги
 
             aircrafts[0].RequestTakeOff();
-            aircrafts[2].RequestLanding(); // Тепер з’явилася вільна смуга
+            aircrafts[2].RequestLanding(); //з’явилася вільна смуга
         }
     }
 }

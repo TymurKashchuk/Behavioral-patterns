@@ -17,7 +17,6 @@ namespace Mediator
             _runways.AddRange(runways);
             _aircrafts.AddRange(aircrafts);
 
-            // Призначаємо всім літакам посередника
             foreach (var aircraft in aircrafts)
                 aircraft.SetMediator(this);
         }
